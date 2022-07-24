@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes and nth pseudo selectors</title>
+    <style>
+        .container{
+            display:block;
+            width:233px;
+            margin:auto;
+        }
+        input{
+            display:block;
+        }
+        /* psuedo selector */
+        input[type='text']{
+            padding:10px;
+            border:2px solid black;
+        }
+        /* psuedo selector to point anchor tag to open website in new tab  */
+        a[target]{
+            color:blueviolet;
+        }
+
+        li:nth-child(3){
+            color:rgb(213, 44, 44);
+        }
+        li:nth-child(2n+0){
+            color:aqua;
+        }
+        li:nth-child(odd){
+            background-color: rgb(126, 173, 105);
+        }
+        /* li:nth-child(even){
+            background-color: bisque;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter the password">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item 1</li>
+            <li class="item" id="item-2">item 2</li>
+            <li class="item" id="item-3">item 3</li>
+            <li class="item" id="item-4">item 4</li>
+            <li class="item" id="item-5">item 5</li>
+            <li class="item" id="item-6">item 6</li>
+            <li class="item" id="item-7">item 7</li>
+            <li class="item" id="item-8">item 8</li>
+        </ul>
+    </div>
+</body>
+</html>

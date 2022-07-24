@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations and key frames</title>
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+        .box{
+            height:200px;
+            width:250px;
+            border:2px solid black;
+            background-color: green;
+            position : relative;
+            /* animation-name: mayur; */
+            animation-name: mayur2;
+            animation-duration: 0.8s;                                                                                                                                                   
+            animation-iteration-count: 3;
+            /* animation-iteration-count: infinite;  it will run infinite times  */
+            /* animation-fill-mode: forwards;  it will stop there at last  */
+            /* animation-fill-mode: alternate;  it will go and come back */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; means animation will start after 3s  */
+            /* animation-direction: reverse; */
+
+            /* can be written together
+            animation : animation-name animation-duration aniamtion-time-function animation-delay animation-iteration-count 
+                        animation-fill-mode */
+        }
+
+        @keyframes mayur2{
+            0%{
+                top:0px;
+                left:0px;
+            }
+            25%{
+                top:250px;
+                left:0px;
+
+            }
+            75%{
+                top:250px;
+                left:250px;
+            }
+            100%{
+                top:0px;
+                left:250px;
+
+            }
+        }
+
+        @keyframes mayur{
+            from{
+              width:200px;
+            }
+            to{
+              width:1400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+    
+</body>
+</html>

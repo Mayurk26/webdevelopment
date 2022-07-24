@@ -1,0 +1,61 @@
+<!--
+Tables colspan and rowspan
+1.spam means to join.
+2.colspan - when we want to join the two columns we use colspan.
+  rowspan - when we want to join the two rows we use rowspan.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html tables</title>
+</head>
+
+<body>
+    <h2>colspan and rowspan in the tables</h2>
+    
+    <!-- Here we want merge Branch and Div column so we used colspan -->
+    <table>
+        <caption>Student details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll no</th>
+                <th colspan = "2">Branch</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rahul</td>
+                <td>426</td>
+                <td rowspan = "2">Computer</td> <!--Here we use rowspan as branch is same for both the 
+                                                                 student-->
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>Viraj</td>
+                <td>422</td>
+                
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Atharva</td>
+                <td>126</td>
+                <td>Civil</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Mayur</td>
+                <td>326</td>
+                <td>ENTC</td>
+                <td>C</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

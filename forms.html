@@ -1,0 +1,113 @@
+<!--Html forms
+ 1. The <form> element is a coontainer for different types of input elements 
+    such as - textfields, radiobuttons,submitbuttons,checkboxes etc.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-Forms</title>
+</head>
+<form>
+    <fieldset>
+        <legend><strong>Form and Some extra features</strong></legend>
+        <!--Input tag with Text Field -->
+
+        <h3>Firstname : </h3>
+        <input type="text" name="firstname"><br>
+        <h3>Lastname : </h3>
+        <input type="text" name="Lastname"><br>
+
+        <!--Input tag with radio button -->
+        <h3> Age : </h3>
+        <input type="radio" name="age">below 18<br>
+        <input type="radio" name="age">Above 18<br>
+
+        <!-- Select and option tags for drop down menu-->
+
+        <h3>Select Qualification from Below menu :</h3>
+        <select name="Qualifications">
+            <option valuee="Btech" selected>Btech</option>
+            <option valuee="Mtech">Btech</option>
+            <option valuee="MS">MS</option>
+            <option valuee="MBA">MBA</option>
+            <option valuee="none">none</option>
+        </select>
+
+        <!-- Input tag with Submit Button -->
+        <h3>Submit form Button</h3>
+        <input type="submit" value="Submit">
+        <input type="reset"><br>
+
+        <!-- Input tag with password Field-->
+
+        <h3>Enter password : </h3>
+        <input type="password" name="password"><br>
+
+        <!-- Input tag with Checkbox Field-->
+
+        <h3>Select the checkbox</h3>
+        <input type="checkbox" name="Refreshing drink" value="tea" checked>tea
+        <input type="checkbox" name="Refreshing drink" value="coffee">coffee
+        <input type="checkbox" name="Refreshing drink" value="sprite">sprite<br>
+
+        <!-- Input tag with button Field-->
+
+        <h3>Button : </h3>
+        <input type="button" name="Simplebutton">umm<br>
+
+        <!-- Input tag with other types like color,date,month,email,number,range etc-->
+
+        <h3>Color field :</h3>
+        <input type="Color" name="ChooseColour"><br>
+
+        <h3>date field :</h3>
+        <input type="date" name="DOB"><br>
+
+        <h3>email field :</h3>
+        <input type="email" name="mail"><br>
+
+        <h3>Choose file field :</h3>
+        <input type="file" name="choosefile"><br>
+
+        <h3>month field :</h3>
+        <input type="month" name="exammonth"><br>
+
+        <h3>Search field :</h3>
+        <input type="search" name="searchhere"><br>
+
+        <h3>Time field :</h3>
+        <input type="time" name="collegetime"><br>
+
+        <h3>URL field :</h3>
+        <input type="url" name="enterurl"><br>
+
+        <h3>Telephone field :</h3>
+        <input type="tel" name="usertel"><br>
+
+        <h3>Number field :</h3>
+        <input type="number" name="quantity" min="1" max="5"><br>
+
+        <h3>Range field :</h3>
+        <input type="number" name="rating" min="1" max="10"><br>
+
+        <!-- We can also generate a text area -->
+        <h3> Below is our Textarea </h3>
+        <textarea name="usermessage" rows="10" col="5">
+
+         </textarea>
+
+
+
+    </fieldset>
+</form>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!--
+## CSS Introduction ##
+
+-CSS gives style to raw HTML
+-It stands for Cascading Style Sheets
+-CSS is used to give style to our web pages
+-CSS is used to make websites responsive
+-CSS takes the responsibility of design in your websites-
+
+-CSS Syntax : The syntax of CSS is - 
+             P { 
+                 color : blue;
+                 }
+             where,-P stands for the selector and it decides which part of the HTML the CSS will be applied. It
+                    states where the CSS property is to be applied.
+                   -Property is used to describe which property you want to change or add. Whether you have to change
+                    colour, border, background, width, all these come under property. 
+                   -The last section is for defining the value. All the properties will be changed according to the 
+                    value we provide.
+
+-We can also target multiple properties at one time. The syntax is as follows-
+header, p.intro { background-color: red;
+                              border-radius: 3px,
+                         }
+
+-There are three ways to Add CSS-
+                             1.)Inline CSS- CSS is added to the elements directly using the style attributes.
+                             2.)Internal CSS- CSS is kept inside the head tags in <style> tags
+                             3.)External CSS- CSS is kept separately inside a .CSS style sheet. It involves two steps-
+                                              Step1 - First, write the CSS in.CSS file.
+                                              step2 - Include that CSS file to Markup.
+
+-The type of css declare at the last wins (means that will implemented)
+-But external css and internal css are mostly preferred.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+
+    <!--
+        This is External CSS
+    -->
+    <link rel="stylesheet" href="external.css">
+
+    <!--
+    This is Internal CSS
+
+ <style>
+    p{
+        color : red;
+        text-align : center;
+    }
+   
+</style>
+-->
+
+</head>
+
+<body>
+    <h3>This is CSS tutorial</h3>
+
+    <!--This is Inline CSS-->
+    <!-- <p style="color : powderblue;background-color : yellow">This tutorial will teach you alll about</p> -->
+
+    <h1><p>This tutorial will teach you alll about</p></h1>
+</body>
+
+</html>

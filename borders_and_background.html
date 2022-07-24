@@ -1,0 +1,61 @@
+<!--
+## Borders_and_backgounds ##
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width,Borders and Background</title>
+    <style>
+         #firstpara {
+            background-color : yellow;
+            height : 80px;
+            width : 455px;
+            border : 2px solid green;
+            /* border-width: 2px;
+            border-color: blue;          Equivalent statement ---> border : 2px solid green  
+            border-style: solid; */
+            border-radius: 10px;
+        }
+
+        #secondpara{
+            background-color : rgb(166, 56, 122);
+            height : 80px;
+            width : 455px;
+            border-top: 4px solid black; 
+            border-right: 4px solid rgb(236, 17, 24); 
+            border-bottom: 4px solid #f7e70aeb; 
+            border-left: 4px solid rgb(43, 7, 106); 
+            border-top-left-radius: 30px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 30px;
+       }
+
+       #thirdpara{
+        height : 755px;
+        width : 455px;
+        background-image : url('https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&w=1000&q=80') ;
+        border : 2px solid red;
+        background-repeat : no-repeat;/* repeat-x and repeat-y will make it repeat on x and y axis */
+        /* background-position: 192px 34px; */
+        background-position: center center;
+        /* background-position: bottom right; */
+        /* background-position: top center; */
+       }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id="firstpara">This is paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondpara">This is my second paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdpara">This is my third paragraph</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables and custom properties</title>
+    <style>
+        /* global declaration */
+        :root{
+            --box_color:greenyellow;
+            --primary_color:black;
+            --maxw : 700px;
+        }
+        .container{
+            max-width: var(--maxw);
+            margin:auto;
+            display:flex;
+            align-items :center;
+            justify-content: center;
+            /* background-color: var(--box_color); */
+        }
+        .box{
+            /* --box_color : greenyellow; */
+            height:200px;
+            width:200px;
+            border: 2px solid var(--primary_color);
+            /* background-color: rgb(146, 181, 77); */
+            background-color: var(--box_color);
+            margin:10px 10px;
+
+            /* if we declare this variable inside any scope then it cant use outside that scope */
+            /* for accesing outside the scope we have to declare it globally */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
